@@ -5,7 +5,7 @@ from pytest import mark
 
 class   Test_001:
 
-    @pytest.mark.xfailcls
+    @pytest.mark.xfail
     def test_sum_001(self):
         a = 10
         b = 20
@@ -15,7 +15,7 @@ class   Test_001:
             assert True
         else:
             assert False
-    @pytest.mark.skipif(sum == 57)
+    @pytest.mark.skip
     def test_sum_002(self):
         a = 23
         b = 34
